@@ -5,6 +5,7 @@ import CatalogAside from '../components/layout/CatalogAside';
 const Delivery = () => {
     return (
         <section className="container-lg content">
+            <img src="/img/delivery.svg" alt="" />
             <div className="row">
                 <CatalogAside />
                 <div className="col col-md-7 col-lg-9">

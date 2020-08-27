@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
-    --main-color: #004f8f;
-    --main-color-medium: #0062cc;
-    --main-color-light: #a4d6ff;
-    --main-color-dark: #003b6b;
-    --main-color-opaque: #004f8f70;
+    --main-color: #8e5a29;
+    --main-color-medium: #ffae62;
+    --main-color-light: #ffae62;
+    --main-color-dark: #5a3b1d;
+    --main-color-opaque: #ffc06236;
 }
 
 body {
