@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import Navbar from './layout/Navbar';
+import Header from './layout/Header';
 import Footer from './layout/Footer';
 
 import Home from '../pages/Home';
@@ -25,7 +25,7 @@ import './App.css';
 function App() {
     return (
         <Router>
-            <Navbar />
+            <Header />
             <div className="container">
                 <Switch>
                     <Route

@@ -1,0 +1,23 @@
+.navbar {
+    background: #181818 !important;
+    opacity: 0.9;
+}
+
+.brand-icon {
+    height: 2rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    opacity: 0.7;
+    transition: opacity, color 0.3s linear;
+}
+
+.nav-link_active {
+    opacity: 1;
+    color: var(--main-color-light) !important;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
