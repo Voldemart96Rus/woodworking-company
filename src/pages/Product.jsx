@@ -55,6 +55,13 @@ const Product = ({items, item}) => {
                             />
                             <div className="flex-shrink-2 product-description">
                                 <h5>{currentItem.title}</h5>
+                                <ul>
+                                    <li>
+                                        Характеристика:{' '}
+                                        {currentItem.characteristic}
+                                    </li>
+                                    <li>Наличие: в наличии</li>
+                                </ul>
                                 <Form.Text className="text-muted my-3">
                                     Купить оптом c доставкой по РФ и ближнему
                                     зарубежью.
@@ -62,34 +69,37 @@ const Product = ({items, item}) => {
                                     Цены уточняйте у менеджеров.
                                 </Form.Text>
                                 <div>
-                                    {currentItem.options && (
-                                        <Form>
-                                            <Form.Text className="text-muted text_main-color-medium">
-                                                Не нашли нужных размеров?
-                                            </Form.Text>
-                                            <Form.Text className="text-muted col-10 p-0">
-                                                Оставте заказ и укажите
-                                                необходимые размеры и параметры
-                                                в комментарии к заказу.
-                                            </Form.Text>
-                                            <Button
-                                                className="mt-3 px-4"
-                                                variant="primary"
-                                                onClick={handleShow}
-                                            >
-                                                Заказать
-                                            </Button>
-                                            <ModalForm
-                                                show={showModal}
-                                                handleClose={handleClose}
-                                                product={currentItem}
-                                                selectedOptions={
-                                                    selectedOptions
-                                                }
-                                            />
-                                        </Form>
-                                    )}
+                                    <Form>
+                                        <Button
+                                            className="mt-3 px-4"
+                                            variant="primary"
+                                            onClick={handleShow}
+                                        >
+                                            Заказать
+                                        </Button>
+                                        <Form.Text className="text-muted text_main-color-medium">
+                                            Затрудняетесь с выбором?
+                                        </Form.Text>
+                                        <Form.Text className="text-muted col-10 p-0">
+                                            Закажите обратный звонок, и наши
+                                            менеджеры помогут подобрать
+                                            необходимое количество и тип
+                                            материала под ваши нужды.
+                                        </Form.Text>
+                                        <ModalForm
+                                            show={showModal}
+                                            handleClose={handleClose}
+                                            product={currentItem}
+                                            selectedOptions={selectedOptions}
+                                        />
+                                    </Form>
                                 </div>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <h4>Применение в строительстве</h4>
+                                {currentItem.description.map((el, i) => (
+                                    <p key={i}>{el}</p>
+                                ))}
                             </div>
                         </div>
                     </section>
