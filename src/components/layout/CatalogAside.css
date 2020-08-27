@@ -1,0 +1,119 @@
+.catalog {
+    margin: 0;
+    padding: 0;
+}
+
+.left-category-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+}
+
+.category-heading {
+    background: var(--main-color);
+    opacity: 0.9;
+}
+
+.category-menu {
+    position: relative;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+}
+
+.category-menu:not(:last-child) {
+    border-bottom: none;
+}
+
+.category-menu:hover+.category-menu, .category-menu_active+.category-menu {
+    border-top-color: var(--main-color);
+}
+
+.category-menu:hover, .category-menu_active {
+    position: relative;
+    background: var(--main-color-opaque);
+    border-color: var(--main-color);
+    color: var(--main-color-dark);
+}
+
+/* .category-menu::after {
+    display: block;
+    color: inherit;
+    content: '';
+    background: url(/img/arrow.svg);
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 12px;
+    font-family: 'FontAwesome';
+    font-size: 14px;
+} */
+
+.catalog-links {
+    display: block;
+    padding: 7px 15px;
+    color: #303030;
+}
+
+.catalog-description {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+.category-menu>div {
+    display: none;
+}
+
+.hidden-menu {
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    width: 920px;
+    height: auto;
+}
+
+.hidden-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    height: 100px;
+    width: 200px;
+}
+
+.menu-item-heading {
+    padding: 3px 3px;
+}
+
+@media screen and (max-width: 1200px) {
+    .category-menu:hover>div {
+        left: 210px;
+        top: 0;
+    }
+    .hidden-menu {
+        width: 720px;
+    }
+    .menu-item-heading {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .category-heading {
+        display: none;
+    }
+}

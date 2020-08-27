@@ -1,0 +1,20 @@
+.product-img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.product-wrapper {
+    margin-top: 20px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.order-from__submit-button {
+    display: block;
+    margin-left: auto;
+}

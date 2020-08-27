@@ -1,0 +1,38 @@
+.footer {
+    background: #181818;
+    padding-top: 20px;
+    color: #ddd;
+}
+
+.footer__nav {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.footer__nav-link:hover {
+    opacity: 0.7;
+}
+
+.hr-bt {
+    border-bottom: 1px solid #303030;
+}
+
+.hr-top {
+    border-top: 1px solid #303030;
+}
+
+.nav-item__catalog {
+    display: none;
+}
+
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-item__catalog {
+        display: inline;
+    }
+}
