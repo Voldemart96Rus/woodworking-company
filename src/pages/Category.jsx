@@ -9,15 +9,29 @@ import './Category.css';
 
 const Category = ({categoryItems, items, category}) => {
     if (categoryItems[category] === undefined) return <NotFound />;
+    const currentItems = categoryItems[category];
     const listItems = categoryItems[category].items;
     return (
         <section className="container-lg content">
             <div className="row">
                 <CatalogAside isActive={category} />
                 <div className="col col-md-7 col-lg-9">
-                    <h3 className="block__header">
-                        {categoryItems[category].title}
-                    </h3>
+                    <h3 className="block__header">{currentItems.title}</h3>
+                    <div className="d-flex">
+                        <img
+                            src={currentItems.img}
+                            alt={currentItems.title}
+                            title={currentItems.title}
+                            className="category-item-img"
+                        />
+                        <div className="ml-3">
+                            <h4>Применение</h4>
+                            {currentItems.description.map((el, i) => (
+                                <p key={i}>{el}</p>
+                            ))}
+                        </div>
+                    </div>
+                    <p>{currentItems.footer}</p>
                     <div className="row">
                         {listItems.map((item, i) => (
                             <div
