@@ -12,32 +12,11 @@ const Product = ({items, item}) => {
     const currentItem = items[item];
 
     const [showModal, setShowModal] = useState(false);
-    const [selectedOptions, setSelectedOptions] = useState(
-        currentItem ? getInitialOptions(currentItem) : null
-    );
 
     if (currentItem === undefined) return <NotFound />;
 
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);
-
-    const handleOptionSelection = (e) =>
-        setSelectedOptions({
-            ...selectedOptions,
-            [e.target.name]: e.target.value,
-        });
-
-    function getInitialOptions(item) {
-        const options = {};
-
-        // item.options.forEach((option) => {
-        //     options[option.name] = option.values.length
-        //         ? option.values[0]
-        //         : 'Не выбрано';
-        // });
-
-        return options;
-    }
 
     return (
         <section className="container-lg content">
@@ -54,7 +33,6 @@ const Product = ({items, item}) => {
                                 className="product-img mr-4 mb-4"
                             />
                             <div className="flex-shrink-2 product-description">
-                                <h5>{currentItem.title}</h5>
                                 <ul>
                                     <li>
                                         Характеристика:{' '}
@@ -70,14 +48,7 @@ const Product = ({items, item}) => {
                                 </Form.Text>
                                 <div>
                                     <Form>
-                                        <Button
-                                            className="mt-3 px-4"
-                                            variant="primary"
-                                            onClick={handleShow}
-                                        >
-                                            Заказать
-                                        </Button>
-                                        <Form.Text className="text-muted text_main-color-medium">
+                                        <Form.Text className="text-muted text_main-color">
                                             Затрудняетесь с выбором?
                                         </Form.Text>
                                         <Form.Text className="text-muted col-10 p-0">
@@ -86,11 +57,17 @@ const Product = ({items, item}) => {
                                             необходимое количество и тип
                                             материала под ваши нужды.
                                         </Form.Text>
+                                        <Button
+                                            className="mt-3 px-4"
+                                            variant="dark"
+                                            onClick={handleShow}
+                                        >
+                                            Заказать
+                                        </Button>
                                         <ModalForm
                                             show={showModal}
                                             handleClose={handleClose}
                                             product={currentItem}
-                                            selectedOptions={selectedOptions}
                                         />
                                     </Form>
                                 </div>

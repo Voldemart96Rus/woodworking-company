@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Header from './layout/Header';
 import Footer from './layout/Footer';
@@ -23,67 +25,85 @@ import {contacts} from './constants';
 import './App.css';
 
 function App() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <Router>
-            <Header />
-            <div className="container">
-                <Switch>
-                    <Route
-                        exact
-                        path="/"
-                        render={(props) => (
-                            <Home {...props} contacts={contacts} />
-                        )}
-                    />
-                    <Route exact path="/delivery" component={Delivery} />
-                    <Route
-                        exact
-                        path="/contacts"
-                        render={(props) => (
-                            <Contacts {...props} contacts={contacts} />
-                        )}
-                    />
-                    <Route exact path="/payment" component={Payment} />
-                    <Route exact path="/production" component={Production} />
-                    <Route exact path="/quality" component={Quality} />
-                    <Route exact path="/job" component={Job} />
-                    <Route
-                        exact
-                        path="/catalog"
-                        render={(props) => (
-                            <Catalog
-                                {...props}
-                                category={initialState.category}
+            <div className="wrapper">
+                <Header />
+                <main className="main">
+                    <div className="container">
+                        <Switch>
+                            <Route
+                                exact
+                                path="/"
+                                render={(props) => (
+                                    <Home {...props} contacts={contacts} />
+                                )}
                             />
-                        )}
-                    />
-                    <Route
-                        exact
-                        path="/category/:category"
-                        render={(props) => (
-                            <Category
-                                {...props}
-                                categoryItems={initialState.categoryItems}
-                                items={initialState.items}
-                                category={props.match.params.category}
+                            <Route
+                                exact
+                                path="/delivery"
+                                component={Delivery}
                             />
-                        )}
-                    />
-                    <Route
-                        exact
-                        path="/product/:item"
-                        render={(props) => (
-                            <Product
-                                {...props}
-                                items={initialState.items}
-                                item={props.match.params.item}
+                            <Route
+                                exact
+                                path="/contacts"
+                                render={(props) => (
+                                    <Contacts {...props} contacts={contacts} />
+                                )}
                             />
-                        )}
-                    />
-                    <Route component={NotFound} />
-                </Switch>
+                            <Route exact path="/payment" component={Payment} />
+                            <Route
+                                exact
+                                path="/production"
+                                component={Production}
+                            />
+                            <Route exact path="/quality" component={Quality} />
+                            <Route exact path="/job" component={Job} />
+                            <Route
+                                exact
+                                path="/catalog"
+                                render={(props) => (
+                                    <Catalog
+                                        {...props}
+                                        category={initialState.category}
+                                    />
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/category/:category"
+                                render={(props) => (
+                                    <Category
+                                        {...props}
+                                        categoryItems={
+                                            initialState.categoryItems
+                                        }
+                                        items={initialState.items}
+                                        category={props.match.params.category}
+                                    />
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/product/:item"
+                                render={(props) => (
+                                    <Product
+                                        {...props}
+                                        items={initialState.items}
+                                        item={props.match.params.item}
+                                    />
+                                )}
+                            />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </div>
+                </main>
+                <Footer contacts={contacts} />
             </div>
-            <Footer contacts={contacts} />
         </Router>
     );
 }

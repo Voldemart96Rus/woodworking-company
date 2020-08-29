@@ -14,13 +14,7 @@ const Quality = () => {
                     <section className="block quality">
                         <h3 className="block__header">Качество продукции</h3>
                         <article>
-                            <h4>
-                                ГАРАНТИРУЕМ 11 ЛЕТ БЕСПЕРЕБОЙНОЙ ЭКСПЛУАТАЦИИ
-                                ИЗДЕЛИЙ
-                            </h4>
-                            <h5 className="pb-3">
-                                Основные этапы производства труб ППУ
-                            </h5>
+                            <h5 className="pb-3"></h5>
                             <div>
                                 <div className="card mb-3">
                                     <div className="row no-gutters">
@@ -34,9 +28,10 @@ const Quality = () => {
                                         <div className="col-lg-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
-                                                    Труба производится на
-                                                    заводах ТМК (Трубная
-                                                    металлургическая компания)
+                                                    Собственное лесопильное
+                                                    производство и
+                                                    деревообрабатывающий
+                                                    (столярный) цех
                                                 </h5>
                                                 <p className="card-text">
                                                     Сразу после производства
@@ -60,8 +55,9 @@ const Quality = () => {
                                         <div className="col-lg-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">
-                                                    Производство трубы в ППУ
-                                                    изоляции
+                                                    Пиломатериалы по современным
+                                                    технологиям от производителя
+                                                    по честным ценам
                                                 </h5>
                                                 <p className="card-text">
                                                     Ключевой показатель качества

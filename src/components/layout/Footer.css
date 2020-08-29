@@ -5,7 +5,7 @@
 }
 
 .footer__nav {
-    padding-left: 20px;
+    padding-left: 0;
     margin: 10px 0;
 }
 
@@ -31,7 +31,16 @@
     margin-top: 7px;
 }
 
+@media screen and (max-width: 991px) {
+    .site-order-link {
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
+    .footer__nav {
+        padding-left: 20px;
+    }
     .nav-item__catalog {
         display: inline;
     }

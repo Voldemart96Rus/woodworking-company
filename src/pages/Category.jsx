@@ -3,6 +3,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import CatalogAside from '../components/layout/CatalogAside';
+import FlipCard from '../components/layout/FlipCard';
 import NotFound from './NotFound';
 
 import './Category.css';
@@ -27,18 +28,7 @@ const Category = ({categoryItems, items, category}) => {
                                     to={items[item].URL}
                                     className="container-fluid p-0 d-flex"
                                 >
-                                    <div className="container-fluid p-0 card pb-4">
-                                        <div className="card-body">
-                                            <h5 className="card-title catalog-category">
-                                                {items[item].title}
-                                            </h5>
-                                        </div>
-                                        <img
-                                            src={items[item].img}
-                                            className="card-img-bottom production-card__image catalog-category__img"
-                                            alt={items[item].title}
-                                        />
-                                    </div>
+                                    <FlipCard item={items[item]} />
                                 </Link>
                             </div>
                         ))}
