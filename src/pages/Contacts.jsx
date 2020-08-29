@@ -53,7 +53,7 @@ const Contacts = ({contacts}) => {
                                     Email для связи с нами:{' '}
                                     <a
                                         href={'mailto:' + contacts.email}
-                                        className="text_main-color-medium link"
+                                        className="text_main-color link"
                                     >
                                         {contacts.email}
                                     </a>
@@ -62,7 +62,7 @@ const Contacts = ({contacts}) => {
                                     Телефон для связи:{' '}
                                     <a
                                         href={'tel:' + contacts.tel}
-                                        className="text_main-color-medium link"
+                                        className="text_main-color link"
                                     >
                                         {contacts.tel}
                                     </a>

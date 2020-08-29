@@ -7,25 +7,46 @@ const initialState = {
             title: 'Брус',
             img: '/img/catalog/Брус/brus-150x200.jpg',
             URL: '/category/Brus',
+            sizes: [
+                '100x100',
+                '100x150',
+                '150x150',
+                '100x200',
+                '150x200',
+                '200x200',
+            ],
         },
         {
             id: 1,
             title: 'Брусок',
             img: '/img/catalog/Брусок/brusok-50x50-6m.jpg',
             URL: '/category/Brusok',
+            sizes: ['50x50-3 м.', '50x50-6 м.', '50x70'],
         },
         {
             id: 2,
             title: 'Необработанная доска',
-            img:
-                '/img/catalog/Необработанная доска/neobreznaya-doska-50-suhaya.jpg',
+            img: '/img/catalog/Необработанная доска/neobreznaya-doska-40.jpg',
             URL: '/category/Neobrabotannaya_doska',
+            sizes: [
+                '25 мм х 6,0 м.',
+                '30 мм х 6,0 м.',
+                '40 мм х 6,0 м.',
+                '50 мм х 6,0 м.',
+            ],
         },
         {
             id: 3,
             title: 'Обрезная доска',
             img: '/img/catalog/Обрезная доска/obreznaya-doska-50.jpg',
             URL: '/category/Obreznaya_doska',
+            sizes: [
+                '50х100-150-200х3,0-6,0 м.',
+                '40х100-150-200х3,0-6,0 м.',
+                '25х100-150-200х3,0-6,0 м.',
+                '25х100-150-200х3,0-6,0 м.',
+                '40х150х6,0 м.',
+            ],
         },
     ],
     categoryItems: {

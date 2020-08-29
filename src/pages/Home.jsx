@@ -4,7 +4,12 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import CatalogAside from '../components/layout/CatalogAside';
 import CompanyDescription from '../components/CompanyDescription';
-
+// .block__header {
+//     display: block;
+//     /* color: var(--main-color-dark); */
+//     /* padding: 6px 0 10px; */
+//     /* border-bottom: 1px solid #d3d3d3; */
+//     margin-bottom: 16px;
 function Home({contacts}) {
     return (
         <section className="container-lg content about">
@@ -14,54 +19,6 @@ function Home({contacts}) {
                     <section className="about">
                         <h3 className="block__header">О компании</h3>
                         <Carousel>
-                            <Carousel.Item>
-                                <picture>
-                                    <source
-                                        media="(max-width: 767px)"
-                                        srcSet="/img/carousel/pilomateriali1.jfif" // todo под мобилку
-                                    />
-                                    <img
-                                        className="d-block w-100 carousel__image carousel__image_sm"
-                                        src="/img/carousel/pilomateriali1.jfif"
-                                        alt=""
-                                    />
-                                </picture>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100 carousel__image"
-                                    src="/img/carousel/les-2.jpg"
-                                    alt=""
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100 carousel__image"
-                                    src="/img/carousel/pilomateriali2.jfif"
-                                    alt=""
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100 carousel__image"
-                                    src="/img/carousel/pilomateriali3.jfif"
-                                    alt=""
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100 carousel__image"
-                                    src="/img/carousel/pilomateriali4.jfif"
-                                    alt=""
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100 carousel__image"
-                                    src="/img/carousel/pilomateriali7.jfif"
-                                    alt=""
-                                />
-                            </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100 carousel__image"
@@ -73,6 +30,27 @@ function Home({contacts}) {
                                 <img
                                     className="d-block w-100 carousel__image"
                                     src="/img/carousel/pilomateriali17.jfif"
+                                    alt=""
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100 carousel__image"
+                                    src="/img/carousel/pilomateriali33.jfif"
+                                    alt=""
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100 carousel__image"
+                                    src="/img/carousel/les-2.jpg"
+                                    alt=""
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100 carousel__image"
+                                    src="/img/carousel/pilomateriali7.jfif"
                                     alt=""
                                 />
                             </Carousel.Item>

@@ -5,7 +5,6 @@ import CatalogAside from '../components/layout/CatalogAside';
 const Delivery = () => {
     return (
         <section className="container-lg content">
-            <img src="/img/delivery.svg" alt="" />
             <div className="row">
                 <CatalogAside />
                 <div className="col col-md-7 col-lg-9">
@@ -42,15 +41,11 @@ const Delivery = () => {
                             Наши трубы обойдутся дешевле чем у других
                             поставщиков.
                         </p>
-
-                        <div className="loop-wrapper">
-                            <div className="mountain"></div>
-                            <div className="hill"></div>
-                            <div className="tree"></div>
-                            <div className="tree"></div>
-                            <div className="tree"></div>
-                            <div className="truck"></div>
-                        </div>
+                        <img
+                            className="hide-mobile"
+                            src="/img/delivery.svg"
+                            alt="Доставка"
+                        />
                     </section>
                 </div>
             </div>

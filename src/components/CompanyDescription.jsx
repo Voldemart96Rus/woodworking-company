@@ -5,27 +5,32 @@ const CompanyDescription = ({contacts}) => {
     return (
         <article className="container">
             <div className="row">
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/favicon.svg"
-                        className="company-description__image p-2 px-3"
+                        src="/img/company/carpenter.svg"
+                        className="company-description__image p-2"
                     />
                     <Card.Body>
                         <Card.Title>О нас</Card.Title>
                         <Card.Text>
-                            ППУТМК специализируется на производстве и поставке{' '}
-                            <span className="text_main-color">
-                                труб ППУ и фасонных изделий
-                            </span>{' '}
-                            в защитной оболочке.
+                            ООО «Лесопромышленная компания» специализируется на
+                            продаже лесоматериалов.
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/factory-light.svg"
+                        src="/img/company/manufacturing.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
@@ -38,10 +43,14 @@ const CompanyDescription = ({contacts}) => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/buildings.svg"
+                        src="/img/company/office.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
@@ -54,92 +63,114 @@ const CompanyDescription = ({contacts}) => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/certificate.svg"
+                        src="/img/company/quality.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
                         <Card.Title>Качество</Card.Title>
                         <Card.Text>
-                            Вся продукция сертифицирована и соответствует{' '}
-                            <span className="text_main-color">
-                                международным стандартам.
-                            </span>
+                            Только пиломатериалы{' '}
+                            <span className="text_main-color">высокого</span>{' '}
+                            качества.
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/hand.svg"
+                        src="/img/company/efficiency.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
                         <Card.Title>Эффективность</Card.Title>
                         <Card.Text>
-                            Высококачественные трубы ППУ в полиэтиленовой и
-                            оцинкованной оболочке помогают{' '}
-                            <span className="text_main-color">
-                                сократить теплопотери до 30%.
-                            </span>
+                            Индивидуальный подход при сотрудничестве с
+                            заказчиком.
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/down.svg"
+                        src="/img/company/bonuses.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
                         <Card.Title>Скидки и бонусы</Card.Title>
                         <Card.Text>
-                            Существует гибкая система{' '}
+                            Гибкая система{' '}
                             <span className="text_main-color">
                                 скидок, бонусов
-                            </span>
-                            , условий оплаты.
+                            </span>{' '}
+                            и условий оплаты.
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/wheels-truck.svg"
+                        src="/img/company/delivery.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
                         <Card.Title>Доставка</Card.Title>
                         <Card.Text>
-                            Мы готовы поставить вам все элементы необходимые для
-                            монтажа{' '}
-                            <span className="text_main-color">теплотрасс.</span>
+                            Доставим все необходимые{' '}
+                            <span className="text_main-color">
+                                пиломатериалы
+                            </span>{' '}
+                            для стройки или ремонта.
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/pipes.svg"
+                        src="/img/company/goods.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
                         <Card.Title>Товары</Card.Title>
                         <Card.Text>
-                            Мы готовы поставить вам{' '}
-                            <span className="text_main-color">
-                                трубы ППУ и другие элементы
-                            </span>{' '}
-                            для монтажа теплотрасс на самых выгодных условиях.
+                            <ul>
+                                <li>Обрезная доска</li>
+                                <li>Необработанная доска</li>
+                                <li>Брусья</li>
+                            </ul>
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card className="text-center col-12 col-lg-6 col-xl-4 company-description__card">
+                <Card
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className="text-center col-12 col-lg-6 col-xl-4 company-description__card"
+                >
                     <Card.Img
                         variant="top"
-                        src="/img/increase.svg"
+                        src="/img/company/terms.svg"
                         className="company-description__image p-2"
                     />
                     <Card.Body>
@@ -157,7 +188,9 @@ const CompanyDescription = ({contacts}) => {
             <div className="company-description__contacts my-3">
                 <a
                     href={'tel:' + contacts.tel}
-                    className="btn btn-primary company-description__contact mb-3"
+                    className="btn btn-dark company-description__contact mb-3"
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
                 >
                     <svg
                         className="icon pr-3"
@@ -202,9 +235,15 @@ const CompanyDescription = ({contacts}) => {
                 </a>
                 <a
                     href={'mailto:' + contacts.email}
-                    className="btn btn-primary company-description__contact "
+                    className="btn btn-dark company-description__contact"
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
                 >
-                    <img src="/img/text.svg" alt="" className="icon pr-3" />
+                    <img
+                        src="/img/company/text.svg"
+                        alt=""
+                        className="icon pr-3"
+                    />
                     Отправьте вашу заявку
                 </a>
             </div>

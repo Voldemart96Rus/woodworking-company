@@ -7,7 +7,7 @@ import $ from 'jquery';
 
 import {mailPath, contacts} from '../components/constants.js';
 
-const ModalForm = ({show, handleClose, product, selectedOptions}) => {
+const ModalForm = ({show, handleClose, product}) => {
     const initialState = {
         name: '',
         email: '',
@@ -59,29 +59,16 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
             </Modal.Header>
             <Modal.Body>
                 <Form onSubmit={onSubmit} className="order-form">
-                    <div className="text-primary">{product.title}</div>
+                    <div className="text_main-color">{product.title}</div>
                     <input
                         type="hidden"
                         name="form_subject"
                         value="Заказ товара на сайте ППУТМК"
                     />
                     <input type="hidden" name="Товар" value={product.title} />
-                    {Object.entries(selectedOptions).map(
-                        ([optionName, optionValue]) => (
-                            <Fragment key={optionName}>
-                                <input
-                                    type="hidden"
-                                    name={optionName}
-                                    value={optionValue}
-                                />
-                                <Form.Text className="text-muted">
-                                    {optionName}: {optionValue}
-                                </Form.Text>
-                            </Fragment>
-                        )
-                    )}
                     <Form.Group controlId="formBasicName" className="mt-4">
                         <Form.Control
+                            className="dark"
                             type="text"
                             placeholder="Имя*"
                             value={state.name}
@@ -130,7 +117,7 @@ const ModalForm = ({show, handleClose, product, selectedOptions}) => {
                     </Form.Group>
                     <Button
                         className="order-from__submit-button"
-                        variant="primary"
+                        variant="dark"
                         type="submit"
                     >
                         Отправить
