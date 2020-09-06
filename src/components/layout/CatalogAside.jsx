@@ -6,7 +6,7 @@ import './CatalogAside.css';
 
 const CatalogAside = ({isActive}) => {
     return (
-        <div className="col-5 col-lg-3 catalog-wrapper p-0 pr-2">
+        <div className="col-5 col-lg-3 catalog-wrapper">
             <div className="left-category-menu hidden-sm hidden-xs">
                 <div className="left-product-cat">
                     <div className="category-heading">

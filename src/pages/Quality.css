@@ -1,4 +1,14 @@
-.card-img {
-    object-fit: cover;
-    height: 100%;
+.quality__img-overlay {
+    padding: 0;
+    bottom: unset;
+    background: #000000b8;
+}
+
+.quality__body {
+    padding: 0;
+    background: #000000d4;
+}
+
+.quality__text {
+    padding: 1rem;
 }

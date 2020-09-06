@@ -11,7 +11,6 @@ import Delivery from '../pages/Delivery';
 import Contacts from '../pages/Contacts';
 import Job from '../pages/Job';
 import Payment from '../pages/Payment';
-import Production from '../pages/Production';
 import Quality from '../pages/Quality';
 import Catalog from '../pages/Catalog';
 import Category from '../pages/Category';
@@ -34,7 +33,7 @@ function App() {
             <div className="wrapper">
                 <Header />
                 <main className="main">
-                    <div className="container">
+                    <div className="container content">
                         <Switch>
                             <Route
                                 exact
@@ -56,11 +55,6 @@ function App() {
                                 )}
                             />
                             <Route exact path="/payment" component={Payment} />
-                            <Route
-                                exact
-                                path="/production"
-                                component={Production}
-                            />
                             <Route exact path="/quality" component={Quality} />
                             <Route exact path="/job" component={Job} />
                             <Route

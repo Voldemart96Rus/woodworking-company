@@ -59,14 +59,6 @@ const Footer = ({contacts}) => {
                             <li className="nav-item">
                                 <Link
                                     className="footer__nav-link"
-                                    to="/production"
-                                >
-                                    Производство
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link
-                                    className="footer__nav-link"
                                     to="/contacts"
                                 >
                                     Контакты
@@ -113,7 +105,20 @@ const Footer = ({contacts}) => {
                                     {contacts.tel}
                                 </a>
                             </li>
-                            <li className="footer__contact-item">
+                            {[
+                                ...contacts.phoneNumbers.filter(
+                                    (tel) => tel !== contacts.tel
+                                ),
+                                ...contacts.salesDepartment.phoneNumbers,
+                            ].map((tel) => (
+                                <li
+                                    className="footer__contact-item pl-4"
+                                    key={tel}
+                                >
+                                    <a href={'tel:' + tel}>{tel}</a>
+                                </li>
+                            ))}
+                            <li className="footer__contact-item  mt-3">
                                 <a href={'mailto:' + contacts.email}>
                                     <svg
                                         className="icon icon_sm pr-2"
