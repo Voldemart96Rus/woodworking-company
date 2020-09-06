@@ -70,14 +70,6 @@ const Header = ({history}) => {
                                 <Nav.Item>Качество</Nav.Item>
                             </Link>
                             <Link
-                                className={`nav-link ${setActive(
-                                    '/production'
-                                )}`}
-                                to="/production"
-                            >
-                                <Nav.Item>Производство</Nav.Item>
-                            </Link>
-                            <Link
                                 className={`nav-link ${setActive('/contacts')}`}
                                 to="/contacts"
                             >

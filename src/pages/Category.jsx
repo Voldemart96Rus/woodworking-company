@@ -13,7 +13,7 @@ const Category = ({categoryItems, items, category}) => {
     const currentItems = categoryItems[category];
     const listItems = categoryItems[category].items;
     return (
-        <section className="container-lg content">
+        <section className="container content">
             <div className="row">
                 <CatalogAside isActive={category} />
                 <div className="col col-md-7 col-lg-9">
