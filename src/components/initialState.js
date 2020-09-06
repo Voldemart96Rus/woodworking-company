@@ -119,6 +119,8 @@ const initialState = {
         '100x100': {
             title: 'Брус 100х100х6000, 1 сорт',
             characteristic: '100Х150, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '16 шт',
             img: '/img/catalog/Брус/brus-100x100.jpg',
             URL: '/product/100x100',
             description: [
@@ -130,6 +132,8 @@ const initialState = {
         '100x150': {
             title: 'Брус 100х150х6000, 1 сорт',
             characteristic: '100Х100, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '11 шт',
             img: '/img/catalog/Брус/brus-100x150.jpg',
             URL: '/product/100x150',
             description: [
@@ -141,6 +145,8 @@ const initialState = {
         '150x150': {
             title: 'Брус 150х150х6000, 1 сорт',
             characteristic: '150Х150, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '7 шт',
             img: '/img/catalog/Брус/brus-150x150.jpg',
             URL: '/product/150x150',
             description: [
@@ -154,6 +160,8 @@ const initialState = {
         '100x200': {
             title: 'Брус 100х200х6000, 1 сорт',
             characteristic: '100Х200, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '8 шт',
             img: '/img/catalog/Брус/brus-100x200.jpg',
             URL: '/product/100x200',
             description: [
@@ -166,6 +174,8 @@ const initialState = {
         '150x200': {
             title: 'Брус 150х200х6000, 1 сорт',
             characteristic: '150Х200, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '5,5 шт',
             img: '/img/catalog/Брус/brus-150x200.jpg',
             URL: '/product/150x200',
             description: [
@@ -178,6 +188,8 @@ const initialState = {
         '200x200': {
             title: 'Брус 200х200х6000, 1 сорт',
             characteristic: '200Х200, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '4 шт',
             img: '/img/catalog/Брус/brus-200x200.jpg',
             URL: '/product/200x200',
             description: [
@@ -190,6 +202,8 @@ const initialState = {
         '50x50-3m': {
             title: 'Брусок 50х50-3м',
             characteristic: '50x50-3 м, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Брусок/brusok-50x50-3m.jpg',
             URL: '/product/50x50-3m',
             description: [
@@ -199,6 +213,8 @@ const initialState = {
         '50x50-6m': {
             title: 'Брусок 50х50-6м',
             characteristic: '50x50-6 м, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Брусок/brusok-50x50-6m.jpg',
             URL: '/product/50x50-6m',
             description: [
@@ -208,6 +224,8 @@ const initialState = {
         '50x70': {
             title: 'Брусок 50х70',
             characteristic: '50x70, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Брусок/brusok-50x70.jpg',
             URL: '/product/50x70',
             description: [
@@ -217,6 +235,8 @@ const initialState = {
         'neobreznaya-doska-25': {
             title: 'Доска необрезная 25ммХ6,0м',
             characteristic: 'толщина 25мм , естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Необработанная доска/neobreznaya-doska-25.jpg',
             URL: '/product/neobreznaya-doska-25',
             description: [
@@ -229,6 +249,8 @@ const initialState = {
         'neobreznaya-doska-30': {
             title: 'Доска необрезная 30ммХ6,0м',
             characteristic: 'толщина 30мм, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Необработанная доска/neobreznaya-doska-30.jpg',
             URL: '/product/neobreznaya-doska-30',
             description: [
@@ -238,6 +260,8 @@ const initialState = {
         'neobreznaya-doska-40': {
             title: 'Доска необрезная 40ммХ6,0м',
             characteristic: 'толщина 40мм, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Необработанная доска/neobreznaya-doska-40.jpg',
             URL: '/product/neobreznaya-doska-40',
             description: ['Подходит для изготовления настилов, перегородок.'],
@@ -245,6 +269,8 @@ const initialState = {
         'neobreznaya-doska-50': {
             title: 'Доска необрезная 50ммХ6,0м',
             characteristic: 'толщина 50мм, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Необработанная доска/neobreznaya-doska-50.jpg',
             URL: '/product/neobreznaya-doska-50',
             description: ['Подходит для изготовления мебели.'],
@@ -252,6 +278,8 @@ const initialState = {
         'neobreznaya-doska-50-suhaya': {
             title: 'Доска необрезная 50ммХ6,0м',
             characteristic: 'толщина 50мм, сухая, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img:
                 '/img/catalog/Необработанная доска/neobreznaya-doska-50-suhaya.jpg',
             URL: '/product/neobreznaya-doska-50-suhaya',
@@ -262,6 +290,8 @@ const initialState = {
         'obreznaya-doska-25-1sort': {
             title: 'Доска обрезная 25х100-150-200х3,0-6,0 м., 1 сорт',
             characteristic: 'толщина 25мм, 1 сорт, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '66,6-44,4-33,3 при длине 6 м шт',
             img: '/img/catalog/Обрезная доска/obreznaya-doska-25-1sort.jpg',
             URL: '/product/obreznaya-doska-25-1sort',
             description: [
@@ -274,6 +304,8 @@ const initialState = {
         'obreznaya-doska-25-2sort': {
             title: 'Доска обрезная 25х100-150-200х3,0-6,0 м., 2 сорт',
             characteristic: 'толщина 25мм, 2 сорт, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '66,6-44,4-33,3 при длине 6 м шт',
             img: '/img/catalog/Обрезная доска/obreznaya-doska-25-2sort.jpg',
             URL: '/product/obreznaya-doska-25-2sort',
             description: [
@@ -286,6 +318,8 @@ const initialState = {
         'obreznaya-doska-40': {
             title: 'Доска обрезная 40х100-150-200х3,0-6,0 м., 1 сорт',
             characteristic: 'толщина 40мм, 1 сорт, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '41,6-27,7-20,8 при длине 6 м шт',
             img: '/img/catalog/Обрезная доска/obreznaya-doska-40.jpg',
             URL: '/product/obreznaya-doska-40',
             description: [
@@ -298,6 +332,8 @@ const initialState = {
         'obreznaya-doska-40-2sort': {
             title: 'Доска обрезная 40х150х6,0 м, 2 сорт',
             characteristic: 'толщина 40мм, 2 сорт, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '',
             img: '/img/catalog/Обрезная доска/obreznaya-doska-40-2sort.jpg',
             URL: '/product/obreznaya-doska-40-2sort',
             description: ['', '', ''],
@@ -305,6 +341,8 @@ const initialState = {
         'obreznaya-doska-50': {
             title: 'Брусок 50х70',
             characteristic: 'толщина 50мм, естественной влажности',
+            packaging: '1 куб (м3)',
+            count: '33,3-22,2-16,6 при длине 6 м шт',
             img: '/img/catalog/Обрезная доска/obreznaya-doska-50.jpg',
             URL: '/product/obreznaya-doska-50',
             description: [
