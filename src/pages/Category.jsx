@@ -33,12 +33,12 @@ const Category = ({categoryItems, items, category}) => {
                             </div>
                         ))}
                     </div>
-                    <div>
+                    <article className="mt-4">
                         <h4>Применение</h4>
                         {currentItems.description.map((el, i) => (
                             <p key={i}>{el}</p>
                         ))}
-                    </div>
+                    </article>
                     <p>{currentItems.footer}</p>
                 </div>
             </div>

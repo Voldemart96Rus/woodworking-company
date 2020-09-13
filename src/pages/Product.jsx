@@ -29,7 +29,7 @@ const Product = ({items, item}) => {
                             src={currentItem.img}
                             alt={currentItem.title}
                             title={currentItem.title}
-                            className="product-img mr-4 mb-4"
+                            className="product-img mr-sm-4 mb-4"
                         />
                         <div className="flex-shrink-2 product-description">
                             <ul>
@@ -70,12 +70,12 @@ const Product = ({items, item}) => {
                                 </Form>
                             </div>
                         </div>
-                        <div className="d-flex flex-column">
+                        <article className="d-flex flex-column mt-4">
                             <h4>Применение в строительстве</h4>
                             {currentItem.description.map((el, i) => (
                                 <p key={i}>{el}</p>
                             ))}
-                        </div>
+                        </article>
                     </div>
                 </section>
             </div>

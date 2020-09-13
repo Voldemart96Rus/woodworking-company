@@ -10,14 +10,24 @@ const Delivery = () => {
             <div className="col col-md-7 col-lg-9">
                 <section className="delivery">
                     <h3 className="block__header">Доставка</h3>
-                    <Alert variant="warning">
+                    <Alert variant="warning" data-aos="zoom-in-right">
                         Транспортные расходы включены в стоимость материала.
+                        <br />
+                        Пиломатериалы соответствуют ГОСТ.
                     </Alert>
-                    <Alert variant="info">
+                    <Alert
+                        variant="info"
+                        data-aos-delay="300"
+                        data-aos="zoom-in-right"
+                    >
                         Наши лесоматериалы обойдутся дешевле чем у других
                         поставщиков.
                     </Alert>
-                    <Alert variant="light text-dark">
+                    <Alert
+                        variant="light text-dark"
+                        data-aos-delay="600"
+                        data-aos="zoom-in-right"
+                    >
                         Доставка по
                         <span className="font-weight-bold">
                             {' '}
@@ -39,6 +49,8 @@ const Delivery = () => {
                         <span className="font-weight-bold">2 дня</span>.
                     </Alert>
                     <img
+                        data-aos-delay="900"
+                        data-aos="zoom-in-right"
                         className="hide-mobile"
                         src="/img/delivery.svg"
                         alt="Доставка"

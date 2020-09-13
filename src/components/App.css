@@ -31,7 +31,12 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
@@ -151,6 +156,7 @@ h5 {
 .block__header {
     color: var(--main-color-dark);
     padding-top: 0.5rem;
+    position: relative;
 }
 
 .block__header::before {
@@ -174,11 +180,13 @@ h5 {
     object-fit: cover;
 }
 
-.about .carousel-control-prev, .about .carousel-control-next {
+.about .carousel-control-prev,
+.about .carousel-control-next {
     height: calc(100% - 3rem);
 }
 
-.about .carousel-control-prev:hover, .about .carousel-control-next:hover {
+.about .carousel-control-prev:hover,
+.about .carousel-control-next:hover {
     background: #00000068;
 }
 
@@ -216,7 +224,7 @@ h5 {
     transition: transform 1s linear;
 }
 
-.company-description__card>div {
+.company-description__card > div {
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.125) !important;
 }

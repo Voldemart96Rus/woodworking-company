@@ -9,11 +9,15 @@ const Payment = () => (
         <div className="col col-md-7 col-lg-9">
             <section className="payment">
                 <h3 className="block__header">Оплата</h3>
-                <Alert variant="warning">
+                <Alert variant="warning" data-aos="zoom-in-right">
                     <span className="font-weight-bold">Безналичный платеж</span>
                     &nbsp;– на расчетный счет компании
                 </Alert>
-                <Alert variant="light text-dark">
+                <Alert
+                    variant="light text-dark"
+                    data-aos="zoom-in-right"
+                    data-aos-delay="300"
+                >
                     Вы можете купить лесоматериалы в{' '}
                     <span className="font-weight-bold">Екатеринбурге</span> за
                     безналичный расчет.

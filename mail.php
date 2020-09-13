@@ -2,7 +2,7 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 $admin_email = 'PPUTMK@gmail.com';
-$project_name = 'ППУТМК "Промышленная компания"';
+$project_name = 'ООО «Лесопромышленная компания»';
 
 if ($method === 'POST') {
 	$form_subject = trim($_POST["form_subject"]);
