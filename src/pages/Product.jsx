@@ -34,9 +34,25 @@ const Product = ({items, item}) => {
                         <div className="flex-shrink-2 product-description">
                             <ul>
                                 <li>
-                                    Характеристика: {currentItem.characteristic}
+                                    <span className="font-weight-bold">
+                                        Фасовка товара:
+                                    </span>{' '}
+                                    {currentItem.packaging}
                                 </li>
-                                <li>Наличие: в наличии</li>
+                                {currentItem.count && (
+                                    <li>
+                                        <span className="font-weight-bold">
+                                            Количество в м3:
+                                        </span>{' '}
+                                        {currentItem.count}
+                                    </li>
+                                )}
+                                <li>
+                                    <span className="font-weight-bold">
+                                        Характеристика:{' '}
+                                    </span>{' '}
+                                    {currentItem.characteristic}
+                                </li>
                             </ul>
                             <Form.Text className="text-muted my-3">
                                 Купить оптом c доставкой по РФ и ближнему
