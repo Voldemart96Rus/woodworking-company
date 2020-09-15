@@ -18,8 +18,11 @@ const CompanyDescription = ({contacts}) => {
                     <Card.Body>
                         <Card.Title>О нас</Card.Title>
                         <Card.Text>
-                            ООО «Лесопромышленная компания» специализируется на
-                            продаже лесоматериалов.
+                            Мы специализируемся на{' '}
+                            <span className="text_main-color">
+                                производстве и продаже
+                            </span>{' '}
+                            лесоматериалов.
                         </Card.Text>
                     </Card.Body>
                 </Card>

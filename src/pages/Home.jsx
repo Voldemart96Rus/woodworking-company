@@ -12,8 +12,10 @@ function Home({contacts}) {
             <div className="col col-md-7 col-lg-9">
                 <section className="about">
                     <h3 className="block__header">О компании</h3>
-                    <Alert variant="warning">
+                    <Alert variant="warning" data-aos="zoom-in-right">
                         Транспортные расходы включены в стоимость материала.
+                        <br />
+                        Пиломатериалы соответствуют ГОСТ.
                     </Alert>
                     <Carousel>
                         <Carousel.Item>

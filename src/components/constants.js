@@ -8,7 +8,7 @@ export const contacts = {
         phoneNumbers: ['+7 (343) 382-58-14'],
     },
 };
-export const mailPath = 'https://xn----btblsciua1aj.xn--p1ai/mail.php';
+export const mailPath = 'https://xn----8sbnxd2afr.xn--p1ai/mail.php';
 export const geoPosition = {
     lat: 56.809389,
     lon: 60.614706,

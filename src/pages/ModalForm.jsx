@@ -63,7 +63,7 @@ const ModalForm = ({show, handleClose, product}) => {
                     <input
                         type="hidden"
                         name="form_subject"
-                        value="Заказ товара на сайте ППУТМК"
+                        value="Заказ на лесоматериалы"
                     />
                     <input type="hidden" name="Товар" value={product.title} />
                     <Form.Group controlId="formBasicName" className="mt-4">

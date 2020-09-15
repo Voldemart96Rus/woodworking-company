@@ -2,7 +2,7 @@ import React from 'react';
 
 import './FlipCard.css';
 
-const FlipCard = ({item}) => {
+const FlipCard = ({item, delay = 0}) => {
     return (
         <div className="flip-card">
             <div className="flip-card__box">

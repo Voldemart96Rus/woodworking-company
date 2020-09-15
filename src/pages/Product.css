@@ -18,3 +18,9 @@
     display: block;
     margin-left: auto;
 }
+
+@media (max-width: 425px) {
+    .product-img {
+        width: 100%;
+    }
+}
